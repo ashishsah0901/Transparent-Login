@@ -1,74 +1,102 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    /* Any background image preferably dark */
-    background: url("../Project6/background.jpg") no-repeat center top/cover;
+    background-color: black;
+    background-size: cover;
     height: 100vh;
-    width: 100wh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .container {
-    width: 31%;
+    width: 42vw;
+    height: 100vh;
     color: white;
     position: absolute;
-    top: 27%;
-    left: 8%;
+    top: 10vh;
+    left: 27vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h1 {
-    font-size: 40px;
+    font-size: 4vw;
     display: inline-block;
-    margin-bottom: 15px;
-    padding: 13px 0px;
+    margin: 8vh 0;
 }
 
 .box {
-    width: 100%;
-    margin: 22px 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box input {
     background: none;
-    width: 75%;
     outline: none;
     color: white;
     border-style: none;
-    padding: 5px 10px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 4vh 0;
+}
+
+.box input::placeholder {
+    color: white;
+    opacity: 0.8;
 }
 
 .box i {
-    width: 25px;
+    width: 2vw;
     text-align: center;
+    color: white;
+    filter: invert(100%);
+}
+
+.btn-div {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
-    display: block;
     cursor: pointer;
     outline: none;
-    margin: 12px 0px;
-    font-size: 20px;
+    font-size: 3vw;
+    padding: 0.7vh 1.3vw;
+    margin: 2vh 0;
     background: none;
     color: white;
-    padding: 10px 21px;
-    border-radius: 10px;
+    border-radius: 10vw;
     border-style: none;
     border: 2px solid white;
     font-weight: bold;
 }
 
 .btn:hover {
-    color: purple;
+    color: black;
     background: white;
-    border: 2px solid purple;
+    padding: 1.2vh 1.8vw;
 }
 
 .signup {
-    margin-top: 10px;
+    margin-top: 5vh;
     cursor: pointer;
     border-bottom: 1px solid white;
     display: inline-block;
+}
+
+.signup h3 {
+    font-size: 2vw
+}
+
+.signup h3:hover {
+    font-size: 2.1vw;
 }
