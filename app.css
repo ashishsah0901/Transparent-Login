@@ -4,8 +4,7 @@
 }
 
 body {
-    background-color: black;
-    background-size: cover;
+    background: url('bg.jpg') no-repeat left top/cover;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -16,7 +15,7 @@ body {
     height: 100vh;
     color: white;
     position: absolute;
-    top: 10vh;
+    top: 0.7vh;
     left: 27vw;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@ body {
 }
 
 .container h1 {
-    font-size: 4vw;
+    font-size: 3.2vw;
     display: inline-block;
     margin: 8vh 0;
 }
@@ -42,20 +41,19 @@ body {
     color: white;
     border-style: none;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 1.3vw;
     padding: 4vh 0;
 }
 
 .box input::placeholder {
     color: white;
-    opacity: 0.8;
 }
 
 .box i {
     width: 2vw;
     text-align: center;
     color: white;
-    filter: invert(100%);
+    margin-right: 0.4vw;
 }
 
 .btn-div {
@@ -69,9 +67,10 @@ body {
 .btn {
     cursor: pointer;
     outline: none;
-    font-size: 3vw;
-    padding: 0.7vh 1.3vw;
-    margin: 2vh 0;
+    font-size: 1vw;
+    padding: 1.7vh 2.3vw;
+    margin: 2vh;
+    width: 9vw;
     background: none;
     color: white;
     border-radius: 10vw;
@@ -82,21 +81,6 @@ body {
 
 .btn:hover {
     color: black;
-    background: white;
-    padding: 1.2vh 1.8vw;
-}
-
-.signup {
-    margin-top: 5vh;
-    cursor: pointer;
-    border-bottom: 1px solid white;
-    display: inline-block;
-}
-
-.signup h3 {
-    font-size: 2vw
-}
-
-.signup h3:hover {
-    font-size: 2.1vw;
+    background: pink;
+    font-size: 1.3vw;
 }
